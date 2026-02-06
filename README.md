@@ -18,4 +18,4 @@ Sistema web de lista de tarefas desenvolvido para prova de estágio, com fronten
 
 ### Acesso à aplicação
 
-- **Link da aplicação em produção**:`http://localhost:5173/`
+- **Link da aplicação da tarefa**:`http://localhost:5173/`
