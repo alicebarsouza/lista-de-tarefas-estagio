@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f9fafb;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+main {
+  flex: 1;
+  padding: 1.5rem 2rem 2rem;
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  background: #111827;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1),
+    0 4px 6px -4px rgba(15, 23, 42, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 1.5rem;
+  align-items: flex-end;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.4);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+button {
+  border-radius: 999px;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: #2563eb;
+  color: #f9fafb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: background 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.4);
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.4);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.4);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+  box-shadow: none;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #111827;
+  box-shadow: none;
+}
+
+button.secondary:hover:not(:disabled) {
+  background: #d1d5db;
+}
+
+button.danger {
+  background: #dc2626;
+  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.4);
+}
+
+button.danger:hover:not(:disabled) {
+  background: #b91c1c;
+  box-shadow: 0 4px 6px rgba(220, 38, 38, 0.4);
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tasks-table thead th {
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.tasks-table tbody td {
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.task-row:nth-child(even) {
+  background: #f9fafb;
+}
+
+.task-row-highlight {
+  background: #fef9c3 !important;
+}
+
+.reorder-cell button {
+  padding-inline: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.actions-cell button {
+  margin-right: 0.35rem;
+}
+
+.tasks-table tfoot td {
+  padding: 0.6rem 0.5rem;
+  font-weight: 600;
+  background: #f3f4f6;
+}
+
+.footer-label {
+  color: #4b5563;
+}
+
+.footer-total {
+  text-align: right;
+  color: #1f2937;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.5);
+}
+
+.modal.small {
+  max-width: 360px;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  header,
+  main,
+  footer {
+    padding-inline: 1rem;
+  }
+
+  .card {
+    padding-inline: 1rem;
+  }
+
+  .tasks-table thead {
+    display: none;
+  }
+
+  .tasks-table,
+  .tasks-table tbody,
+  .tasks-table tr,
+  .tasks-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .tasks-table tr {
+    margin-bottom: 0.75rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+  }
+
+  .tasks-table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .tasks-table tfoot tr {
+    border: none;
+  }
+}
+
