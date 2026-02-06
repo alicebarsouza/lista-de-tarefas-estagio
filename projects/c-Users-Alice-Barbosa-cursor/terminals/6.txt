@@ -2,8 +2,8 @@
 pid: 38848
 cwd: |
   C:/Users/Alice Barbosa/.cursor/backend
-last_command: npm start
-last_exit_code: 130
+last_command: node --version
+last_exit_code: 0
 ---
 
 Alice Barbosa@Alice MINGW64 ~/.cursor (main)       
@@ -166,6 +166,14 @@ $ npm start
 
 Backend ouvindo na porta 4000
 
+
+Alice Barbosa@Alice MINGW64 ~/.cursor/backend (main)
+$ node --v
+C:/Program Files/nodejs/node.exe: bad option: --v  
+
+Alice Barbosa@Alice MINGW64 ~/.cursor/backend (main)
+$ node --version
+v24.12.0
 
 Alice Barbosa@Alice MINGW64 ~/.cursor/backend (main)
 $
