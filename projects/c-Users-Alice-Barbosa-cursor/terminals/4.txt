@@ -1,9 +1,0 @@
----
-pid: 41516
-cwd: |
-  C:\Users\Alice Barbosa\.cursor
-active_command: |
-  git add .
-  git commit -m "Sistema lista de tarefas (prova de estágio)"
----
-warning: in the working copy of 'extensions/ritwickdey.liveserver-5.7.9-universal/node_modules/table/node_mo

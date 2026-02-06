@@ -1,0 +1,85 @@
+---
+pid: 40452
+cwd: |
+  C:\Users\Alice Barbosa\.cursor
+---
+agio.git
+   f719535..4f8d08c  main -> main
+PS C:\Users\Alice Barbosa\.cursor> git add README.md
+PS C:\Users\Alice Barbosa\.cursor> git commit -m "Atualizar README"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ai-tracking/ai-code-tracking.db
+        modified:   ide_state.json
+        modified:   projects/c-Users-Alice-Barbosa-cursor/agent-transcripts/11cc1690-8e11-417b-b3f1-56a309c3072b.txt
+        modified:   projects/c-Users-Alice-Barbosa-cursor/terminals/4.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        projects/c-Users-Alice-Barbosa-cursor/assets/c__Users_Alice_Barbosa_AppData_Roaming_Cursor_User_workspaceStorage_db85854c41d92315e6faee83f0902232_images_image-f606502c-0244-4093-9fca-58edd6a142e9.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Alice Barbosa\.cursor> git add README.md
+PS C:\Users\Alice Barbosa\.cursor> git commit -m "Atualiza README com resumo do projeto e link"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ai-tracking/ai-code-tracking.db
+        modified:   ide_state.json
+        modified:   projects/c-Users-Alice-Barbosa-cursor/agent-transcripts/11cc1690-8e11-417b-b3f1-56a309c3072b.txt
+        modified:   projects/c-Users-Alice-Barbosa-cursor/terminals/4.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        projects/c-Users-Alice-Barbosa-cursor/assets/c__Users_Alice_Barbosa_AppData_Roaming_Cursor_User_workspaceStorage_db85854c41d92315e6faee83f0902232_images_image-f606502c-0244-4093-9fca-58edd6a142e9.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Alice Barbosa\.cursor> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ai-tracking/ai-code-tracking.db
+        modified:   ide_state.json
+        modified:   projects/c-Users-Alice-Barbosa-cursor/agent-transcripts/11cc1690-8e11-417b-b3f1-56a309c3072b.txt
+        modified:   projects/c-Users-Alice-Barbosa-cursor/terminals/4.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        projects/c-Users-Alice-Barbosa-cursor/assets/c__Users_Alice_Barbosa_AppData_Roaming_Cursor_User_workspaceStorage_db85854c41d92315e6faee83f0902232_images_image-f606502c-0244-4093-9fca-58edd6a142e9.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Alice Barbosa\.cursor> git add README
+fatal: pathspec 'README' did not match any files
+PS C:\Users\Alice Barbosa\.cursor> git add README.md
+PS C:\Users\Alice Barbosa\.cursor>  git commit -m "Atualiza README com resumo do projeto e link"
+[main fdecac4] Atualiza README com resumo do projeto e link
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+licebarsouza/lista-de-tarefas-estagio.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\Alice Barbosa\.cursor> npm install
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\Alice Barbosa\.cursor\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\Alice Barbosa\.cursor\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\Alice Barbosa\AppData\Local\npm-cache\_logs\2026-02-06T17_03_47_688Z-debug-0.log
+PS C:\Users\Alice Barbosa\.cursor> 
+ *  History restored 
+
+PS C:\Users\Alice Barbosa\.cursor>

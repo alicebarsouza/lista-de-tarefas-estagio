@@ -469,7 +469,7 @@ function App() {
       )}
 
       <footer>
-        <small>Sistema Lista de Tarefas - Prova de estágio</small>
+        <small>Sistema Lista de Tarefas - Teste prático</small>
       </footer>
     </div>
   );

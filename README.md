@@ -2,10 +2,6 @@
 
 Sistema web de lista de tarefas desenvolvido para prova de estágio, com frontend em **React** e backend em **Node.js + Express + SQLite**.
 
-### Acesso à aplicação
-
-- **Link da aplicação em produção**:`http://localhost:5173/`
-
 ### Principais funcionalidades
 
 - Cadastro de tarefas com:
@@ -20,4 +16,6 @@ Sistema web de lista de tarefas desenvolvido para prova de estágio, com fronten
 - Formatação brasileira para datas (DD/MM/AAAA) e valores monetários (R$ 1.234,56).
 - Somatório dos custos de todas as tarefas listadas.
 
+### Acesso à aplicação
 
+- **Link da aplicação em produção**:`http://localhost:5173/`

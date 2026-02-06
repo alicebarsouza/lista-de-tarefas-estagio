@@ -2889,3 +2889,778 @@ git commit -m "Sistema lista de tarefas (prova de estágio)"
 o Git **não** vai incluir essas pastas/arquivos ignorados.
 
 Se quiser, me diga qual editor você está usando (Cursor, VSCode puro, outro) que eu descrevo o clique a clique específico para ele.
+
+user:
+[Image]
+<image_files>
+The following images were provdied by the user and saved to the workspace for future use:
+1. C:\Users\Alice Barbosa\.cursor\projects\c-Users-Alice-Barbosa-cursor/assets/c__Users_Alice_Barbosa_AppData_Roaming_Cursor_User_workspaceStorage_db85854c41d92315e6faee83f0902232_images_image-f606502c-0244-4093-9fca-58edd6a142e9.png
+
+These images can be copied for use in other locations.
+</image_files>
+<user_query>
+
+</user_query>
+
+assistant:
+[Thinking] **Clarifying repository issues**
+
+I’m noticing there might be a trailing slash in the placeholder URL, leading to a “repository not found” error. It seems like they might have used a placeholder command. I should provide them with an explicit command using their actual URL. But to avoid any guesses, I’ll ask them to copy their repo URL. I can also use the Read tool to inspect the terminal file for context and see the actual remote commands.
+Beleza — esse erro acontece quando o `origin` já está configurado e/ou a URL do repositório está errada (ou o repo ainda não existe no GitHub). Vou checar o que você rodou no terminal e te passar o comando exato para corrigir o `origin` e fazer o `push`.
+[Tool call] Read
+  path: c:\Users\Alice Barbosa\.cursor\projects\c-Users-Alice-Barbosa-cursor\terminals\4.txt
+  offset: 980
+  limit: 80
+
+[Tool result] Read
+
+assistant:
+O que aconteceu aí:
+
+- Você primeiro adicionou o `origin` com a URL **placeholder** `https://github.com/SEU_USUARIO/NOME_REPO.git` (por isso “Repository not found”).
+- Depois tentou adicionar outro `origin`, mas o Git respondeu **“remote origin already exists”**.
+- E no final ele continuou tentando usar a URL antiga (a placeholder).
+
+### Como corrigir (rápido)
+
+1) **Troque a URL do `origin` para a URL correta do seu repo** (a do GitHub):
+
+```powershell
+cd "C:\Users\Alice Barbosa\.cursor"
+git remote set-url origin https://github.com/alicebarsouza/lista-de-tarefas-estagio.git
+```
+
+2) Confira se ficou certo:
+
+```powershell
+git remote -v
+```
+
+Tem que aparecer `alicebarsouza/lista-de-tarefas-estagio.git` em fetch/push.
+
+3) Agora faça o push:
+
+```powershell
+git push -u origin main
+```
+
+---
+
+### Se ainda aparecer “Repository not found”
+Isso normalmente é porque **o repositório não existe** com esse nome/usuário, ou você **não tem permissão**, ou a URL está diferente.
+
+Nesse caso:
+- Abra o repositório no GitHub e copie a URL correta em **Code → HTTPS**.
+- Me mande essa URL (ou cole aqui) que eu te digo o comando `git remote set-url` certinho.
+
+Se aparecer uma tela pedindo login/senha: o GitHub não aceita senha normal; você precisa autenticar via navegador/token (eu te guio quando aparecer a mensagem).
+
+user:
+<user_query>
+Agora ajuste o Readme.md para que apenas apareça as informações importantes doque foi feito no projeto e o link para que o recrutador acesse a lista
+</user_query>
+
+assistant:
+[Thinking] **Simplifying README instructions**
+
+The user wants a simplified README with only essential information and a placeholder for a link to the app. They haven't deployed yet, so I should keep it in Portuguese and include a placeholder like "Link de acesso à aplicação: https://...". I need to read the README first before making changes and then apply those changes. Since we don’t have the actual link, it’s best to indicate that it needs to be replaced later. I want to make sure I'm helping them effectively!
+**Structuring a concise README**
+
+I could include a comment like, "Atualize este link com a URL publicada," but the user wants only essential information. I’m thinking a small README could have sections like Title, Short Description, Technologies, Main Features (as bullets), and Access Instructions. Since we don’t know the actual URL, I’ll suggest a placeholder like `[Acesse a aplicação aqui](https://SEU_LINK_DE_PRODUCAO_AQUI)` and indicate to replace it after deployment. I should keep it minimal and remove unnecessary deployment instructions. I'll read the README to start!
+[Tool call] Read
+  path: c:\Users\Alice Barbosa\.cursor\README.md
+
+[Tool result] Read
+
+assistant:
+[Thinking] 
+[Tool call] ApplyPatch*** Begin Patch
+*** Update File: c:\Users\Alice Barbosa\.cursor\README.md
+@@
+-## Sistema Lista de Tarefas (React + Node)
+-
+-Este projeto implementa o sistema de lista de tarefas exatamente conforme a especificação fornecida para a vaga de estágio.
+-
+-- **Frontend**: React + Vite (`frontend/`)
+-- **Backend**: Node.js + Express + SQLite (`backend/`)
+-
+-### Como rodar localmente
+-
+-1. **Pré-requisitos**
+-   - Node.js instalado (versão LTS recomendada)
+-
+-2. **Instalar dependências**
+-
+-   ```bash
+-   cd backend
+-   npm install
+-
+-   cd ../frontend
+-   npm install
+-   ```
+-
+-3. **Subir o backend**
+-
+-   ```bash
+-   cd backend
+-   npm run dev
+-   ```
+-
+-   O backend ficará disponível em `http://localhost:4000`.
+-
+-4. **Subir o frontend**
+-
+-   Em outro terminal:
+-
+-   ```bash
+-   cd frontend
+-   npm run dev
+-   ```
+-
+-   A aplicação React ficará disponível em `http://localhost:5173`.
+-
+-### Banco de dados
+-
+-- Banco: **SQLite**
+-- Arquivo: criado automaticamente como `database.sqlite` dentro da pasta `backend`.
+-- Tabela `tarefas`:
+-  - `id` (INTEGER, chave primária, autoincremento)
+-  - `nome` (TEXT, obrigatório, **único**)
+-  - `custo` (REAL, obrigatório, **>= 0**)
+-  - `data_limite` (TEXT, obrigatório, data em formato ISO `AAAA-MM-DD`)
+-  - `ordem` (INTEGER, obrigatório, **único**, usado para ordenar a apresentação)
+-
+-### Funcionalidades implementadas
+-
+-- **Lista de Tarefas (página principal)**
+-  - Lista todas as tarefas cadastradas, ordenadas pelo campo `ordem`.
+-  - Exibe: Identificador, Nome da tarefa, Custo (R$), Data-limite (DD/MM/AAAA) e Ordem.
+-  - A linha da tarefa cujo **custo >= R$ 1.000,00** é destacada em amarelo.
+-  - Ao lado de cada registro existem botões de **Editar** e **Excluir**.
+-  - No rodapé da lista é exibido o **somatório dos custos** de todas as tarefas, em formato brasileiro.
+-
+-- **Incluir**
+-  - Formulário para incluir nova tarefa na própria tela principal.
+-  - Campos obrigatórios: Nome da Tarefa, Custo (R$), Data-limite (DD/MM/AAAA).
+-  - Validação de:
+-    - Campos vazios
+-    - Custo numérico >= 0
+-    - Data válida (dia, mês e ano coerentes).
+-  - O identificador é gerado automaticamente pelo banco (auto-incremento).
+-  - O registro é incluído **no final da ordem de apresentação** (ordem = maior ordem + 1).
+-  - Não permite inclusão de tarefa com **nome repetido** (regra de negócio e constraint UNIQUE no banco).
+-
+-- **Editar**
+-  - Edição feita em um **popup (modal)** com os 3 campos permitidos:
+-    - Nome da tarefa
+-    - Custo (R$)
+-    - Data-limite (DD/MM/AAAA)
+-  - Os três campos são obrigatórios.
+-  - Verificação de **nome duplicado** (não permite salvar se já existir outra tarefa com o mesmo nome).
+-  - Os demais campos (`id` e `ordem`) não podem ser alterados.
+-
+-- **Excluir**
+-  - Botão **Excluir** para cada tarefa.
+-  - Ao clicar, abre um **popup de confirmação** (Sim/Não).
+-  - Se confirmado, o registro é excluído do banco.
+-
+-- **Reordenação das tarefas**
+-  - Implementada pela opção **2** da especificação:
+-    - Em cada linha existem botões para **subir** (↑) e **descer** (↓) a tarefa na ordem de apresentação.
+-    - A primeira tarefa não pode subir; a última não pode descer (botões desabilitados).
+-  - A reordenação é persistida no banco, trocando as ordens das duas tarefas envolvidas.
+-
+-- **Formatação brasileira**
+-  - Todas as **datas** exibidas na tela usam o formato **DD/MM/AAAA**.
+-  - Todos os **valores monetários** são exibidos no formato brasileiro (ex.: `R$ 1.234,56`).
+-
+-### Publicação no GitHub
+-
+-1. Crie um repositório no GitHub (por exemplo `lista-de-tarefas-estagio`).
+-2. No diretório raiz deste projeto (onde está este `README.md`), execute:
+-
+-   ```bash
+-   git init
+-   git add .
+-   git commit -m "Sistema lista de tarefas (prova de estágio)"
+-   git branch -M main
+-   git remote add origin https://github.com/SEU_USUARIO/SEU_REPO.git
+-   git push -u origin main
+-   ```
+-
+-3. Substitua `SEU_USUARIO` e `SEU_REPO` pelos valores do seu GitHub.
+-
+-### Sugestão de deploy (para permitir testes sem instalação)
+-
+-Você pode publicar a aplicação em um serviço gratuito, por exemplo:
+-
+-- **Backend (Node + SQLite)**: Render, Railway ou outro provedor que suporte Node.js.
+-- **Frontend (React)**: Vercel ou Netlify.
+-
+-Passos gerais:
+-
+-1. Faça deploy do **backend**:
+-   - Crie um novo serviço Node no provedor.
+-   - Configure o comando de start (`npm start`) e a porta (por exemplo 4000).
+-   - Garanta que o arquivo `database.sqlite` ficará em um diretório persistente se o provedor exigir.
+-2. Faça build do **frontend**:
+-
+-   ```bash
+-   cd frontend
+-   npm run build
+-   ```
+-
+-3. Publique a pasta `frontend/dist` em um hosting estático (Vercel/Netlify).
+-4. Ajuste no `vite.config.js` (ou via variável de ambiente) o endereço base da API se o backend não estiver em `http://localhost:4000`.
+-
+-Ao final, inclua no README do repositório o **link público** do frontend para que o avaliador possa testar o sistema sem instalação.
+-
++## Sistema Lista de Tarefas
++
++Sistema web de lista de tarefas desenvolvido para prova de estágio, com frontend em **React + Vite** e backend em **Node.js + Express + SQLite**.
++
++### Principais funcionalidades
++
++- Cadastro de tarefas com:
++  - Nome da tarefa (obrigatório e não pode repetir)
++  - Custo em reais (obrigatório, valor numérico ≥ 0)
++  - Data-limite (obrigatória, data válida)
++- Listagem das tarefas ordenadas pelo campo **Ordem de apresentação**.
++- Destaque visual para tarefas com custo **≥ R$ 1.000,00**.
++- Edição (popup) de nome, custo e data-limite, com validação e verificação de nome duplicado.
++- Exclusão com confirmação (Sim/Não).
++- Reordenação das tarefas usando botões de **subir** e **descer**, com ordem persistida no banco.
++- Formatação brasileira para datas (DD/MM/AAAA) e valores monetários (R$ 1.234,56).
++
++### Acesso à aplicação
++
++- **Link da aplicação em produção**: _(substitua abaixo pelo link após o deploy)_  
++  `https://SEU_LINK_DA_APLICACAO_AQUI`
+*** End Patch
+
+[Tool result] ApplyPatch
+
+assistant:
+Deixei o `README.md` bem enxuto, com:
+
+- **Descrição curta** do projeto e das tecnologias.
+- **Lista das principais funcionalidades** implementadas.
+- Uma seção **“Acesso à aplicação”** com um campo para o **link em produção**.
+
+Agora é só você substituir `https://SEU_LINK_DA_APLICACAO_AQUI` pelo link real que o provedor (Vercel, Netlify etc.) te der quando você fizer o deploy.
+
+user:
+<user_query>
+como atualizar o readme do github?
+</user_query>
+
+assistant:
+[Thinking] **Explaining README updates on GitHub**
+
+The user is looking for a concise step-by-step guide on how to update their README file on GitHub after editing it locally. Here's what I need to explain: 
+
+First, they should save their file. Then, in the terminal located in the repository, they can check modified files with `git status`. Next, they should run `git add README.md`, followed by `git commit -m "Atualiza README com resumo do projeto"`, and finally execute `git push`. While editing directly on GitHub is an option, it's usually better to use local changes.
+Bem simples, você já fez a parte difícil (editar o arquivo). Agora só precisa **enviar essa edição para o GitHub**.
+
+### Passo a passo para atualizar o README no GitHub
+
+1. **Garanta que o `README.md` está salvo** no Cursor/VSCode.
+
+2. No terminal, vá para a pasta do repositório (se já não estiver nela):
+
+```powershell
+cd "C:\Users\Alice Barbosa\.cursor"
+```
+
+3. Veja o que mudou (opcional, mas bom para conferir):
+
+```powershell
+git status
+```
+
+4. Adicione o `README.md` ao commit:
+
+```powershell
+git add README.md
+```
+
+5. Crie um commit com essa mudança:
+
+```powershell
+git commit -m "Atualiza README com resumo do projeto e link"
+```
+
+6. Envie para o GitHub:
+
+```powershell
+git push
+```
+
+Depois disso, abra o seu repositório no GitHub, atualize a página e você verá o `README.md` exatamente como está aí na sua máquina.
+
+user:
+<user_query>
+mude o css, para que a página fique em tons de marrom
+</user_query>
+
+assistant:
+[Thinking] 
+[Tool call] Read
+  path: c:\Users\Alice Barbosa\.cursor\frontend\src\styles.css
+
+[Tool result] Read
+
+assistant:
+[Tool call] ApplyPatch*** Begin Patch
+*** Update File: c:\Users\Alice Barbosa\.cursor\frontend\src\styles.css
+@@
+ body {
+   margin: 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+-  background: #f3f4f6;
+-  color: #111827;
++  background: #f4ede4; /* bege claro puxando para marrom */
++  color: #3b2a1a; /* marrom escuro para texto */
+ }
+@@
+ header {
+-  background: linear-gradient(135deg, #1f2937, #111827);
+-  color: #f9fafb;
++  background: linear-gradient(135deg, #5d3b23, #3e2515); /* tons de marrom */
++  color: #fff7ec;
+   padding: 1.5rem 2rem;
+-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.5);
++  box-shadow: 0 2px 8px rgba(46, 27, 15, 0.6);
+ }
+@@
+ footer {
+   padding: 1rem 2rem;
+   text-align: center;
+-  background: #111827;
+-  color: #9ca3af;
++  background: #3e2515;
++  color: #f2e2cf;
+   font-size: 0.8rem;
+ }
+@@
+ .card {
+-  background: #ffffff;
++  background: #fff8f0;
+   border-radius: 0.75rem;
+   padding: 1.25rem 1.5rem 1.5rem;
+-  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1),
+-    0 4px 6px -4px rgba(15, 23, 42, 0.1);
++  box-shadow: 0 10px 15px -3px rgba(72, 43, 25, 0.15),
++    0 4px 6px -4px rgba(72, 43, 25, 0.25);
+   margin-bottom: 1.5rem;
+ }
+@@
+ .form-field label {
+   font-size: 0.9rem;
+-  color: #374151;
++  color: #5a4331;
+ }
+@@
+ input[type="text"],
+ input[type="number"],
+ input[type="date"] {
+   padding: 0.55rem 0.7rem;
+   border-radius: 0.5rem;
+-  border: 1px solid #d1d5db;
++  border: 1px solid #d3b79a;
+   font-size: 0.95rem;
+   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+@@
+ input[type="text"]:focus,
+ input[type="number"]:focus,
+ input[type="date"]:focus {
+   outline: none;
+-  border-color: #2563eb;
+-  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.4);
++  border-color: #b77939;
++  box-shadow: 0 0 0 1px rgba(183, 121, 57, 0.5);
+ }
+@@
+ button {
+   border-radius: 999px;
+   border: none;
+   padding: 0.5rem 1rem;
+   font-size: 0.9rem;
+   cursor: pointer;
+-  background: #2563eb;
+-  color: #f9fafb;
++  background: #b77939; /* marrom dourado */
++  color: #fdf7f0;
+   display: inline-flex;
+@@
+   gap: 0.25rem;
+   transition: background 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+-  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.4);
++  box-shadow: 0 1px 3px rgba(89, 48, 24, 0.4);
+ }
+ 
+ button:hover:not(:disabled) {
+-  background: #1d4ed8;
++  background: #995b22;
+   transform: translateY(-1px);
+-  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.4);
++  box-shadow: 0 4px 6px rgba(89, 48, 24, 0.5);
+ }
+@@
+ button:active:not(:disabled) {
+   transform: translateY(0);
+-  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.4);
++  box-shadow: 0 1px 3px rgba(89, 48, 24, 0.4);
+ }
+@@
+ button.secondary {
+-  background: #e5e7eb;
+-  color: #111827;
++  background: #e8d4bf;
++  color: #3b2a1a;
+   box-shadow: none;
+ }
+ 
+ button.secondary:hover:not(:disabled) {
+-  background: #d1d5db;
++  background: #dec5aa;
+ }
+@@
+ button.danger {
+-  background: #dc2626;
+-  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.4);
++  background: #8b2a1a;
++  box-shadow: 0 1px 3px rgba(78, 20, 11, 0.5);
+ }
+ 
+ button.danger:hover:not(:disabled) {
+-  background: #b91c1c;
+-  box-shadow: 0 4px 6px rgba(220, 38, 38, 0.4);
++  background: #701f13;
++  box-shadow: 0 4px 6px rgba(78, 20, 11, 0.6);
+ }
+@@
+ .alert-error {
+-  background: #fef2f2;
+-  color: #b91c1c;
+-  border: 1px solid #fecaca;
++  background: #fbe9e4;
++  color: #7a2614;
++  border: 1px solid #f1c4b2;
+ }
+@@
+ .tasks-table thead th {
+   text-align: left;
+   padding: 0.5rem 0.5rem;
+-  border-bottom: 1px solid #e5e7eb;
+-  background: #f9fafb;
++  border-bottom: 1px solid #e2c9b3;
++  background: #f8eee4;
+ }
+@@
+ .tasks-table tbody td {
+   padding: 0.5rem 0.5rem;
+-  border-bottom: 1px solid #e5e7eb;
++  border-bottom: 1px solid #e2c9b3;
+ }
+@@
+ .task-row:nth-child(even) {
+-  background: #f9fafb;
++  background: #f7ece0;
+ }
+@@
+ .task-row-highlight {
+-  background: #fef9c3 !important;
++  background: #f4e0b5 !important; /* destaque em amarelo puxando para marrom */
+ }
+@@
+ .tasks-table tfoot td {
+   padding: 0.6rem 0.5rem;
+   font-weight: 600;
+-  background: #f3f4f6;
++  background: #f0e1d3;
+ }
+@@
+ .footer-label {
+-  color: #4b5563;
++  color: #5a4331;
+ }
+@@
+ .footer-total {
+   text-align: right;
+-  color: #1f2937;
++  color: #3b2a1a;
+ }
+@@
+ .modal-backdrop {
+   position: fixed;
+   inset: 0;
+-  background: rgba(15, 23, 42, 0.5);
++  background: rgba(32, 18, 9, 0.6);
+@@
+ .modal {
+-  background: #ffffff;
++  background: #fff7ee;
+@@
+   width: 100%;
+   max-width: 480px;
+-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.5);
++  box-shadow: 0 10px 25px rgba(64, 34, 17, 0.6);
+ }
+*** End Patch
+
+[Tool result] ApplyPatch
+
+assistant:
+Ajustei todo o tema para tons de marrom:
+
+- **Fundo da página** agora é um bege/marrom claro.
+- **Header e footer** usam um degradê marrom escuro.
+- **Cards, tabela, modal, botões e alertas** foram recoloridos para variações de marrom/dourado, mantendo contraste e legibilidade.
+- O destaque das tarefas caras continua, mas agora em um tom amarelado puxado para marrom.
+
+É só salvar o `styles.css` e recarregar o frontend para ver o novo visual.
+
+user:
+<user_query>
+volte como estava a estilização antiga. porem no rodapé onde se lê Sistema Lista de Tarefas - Prova de estágio mude para que fique apenas Sistema Lista de Tarefas - Teste prático 
+</user_query>
+
+assistant:
+[Thinking] **Reverting CSS and footer text**
+
+I need to revert the CSS back to the original grey and blue theme, and also update the footer text in App.jsx. I have the previous version saved from earlier in the session, so it should be straightforward. I'll manually reset the colors to match the earlier file content since I have the old CSS ready. Additionally, I need to change the footer text in App.jsx using the current content and apply two patches: one for styles and one for the text update.
+[Tool call] Read
+  path: c:\Users\Alice Barbosa\.cursor\frontend\src\App.jsx
+
+[Tool result] Read
+
+assistant:
+[Tool call] Read
+  path: c:\Users\Alice Barbosa\.cursor\frontend\src\styles.css
+
+[Tool result] Read
+
+assistant:
+[Tool call] ApplyPatch*** Begin Patch
+*** Update File: c:\Users\Alice Barbosa\.cursor\frontend\src\styles.css
+@@
+ body {
+   margin: 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+-  background: #f4ede4; /* bege claro puxando para marrom */
+-  color: #3b2a1a; /* marrom escuro para texto */
++  background: #f3f4f6;
++  color: #111827;
+ }
+@@
+ header {
+-  background: linear-gradient(135deg, #5d3b23, #3e2515); /* tons de marrom */
+-  color: #fff7ec;
++  background: linear-gradient(135deg, #1f2937, #111827);
++  color: #f9fafb;
+   padding: 1.5rem 2rem;
+-  box-shadow: 0 2px 8px rgba(46, 27, 15, 0.6);
++  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.5);
+ }
+@@
+ footer {
+   padding: 1rem 2rem;
+   text-align: center;
+-  background: #3e2515;
+-  color: #f2e2cf;
++  background: #111827;
++  color: #9ca3af;
+   font-size: 0.8rem;
+ }
+@@
+ .card {
+-  background: #fff8f0;
++  background: #ffffff;
+   border-radius: 0.75rem;
+   padding: 1.25rem 1.5rem 1.5rem;
+-  box-shadow: 0 10px 15px -3px rgba(72, 43, 25, 0.15),
+-    0 4px 6px -4px rgba(72, 43, 25, 0.25);
++  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1),
++    0 4px 6px -4px rgba(15, 23, 42, 0.1);
+   margin-bottom: 1.5rem;
+ }
+@@
+ .form-field label {
+   font-size: 0.9rem;
+-  color: #5a4331;
++  color: #374151;
+ }
+@@
+ input[type="text"],
+ input[type="number"],
+ input[type="date"] {
+   padding: 0.55rem 0.7rem;
+   border-radius: 0.5rem;
+-  border: 1px solid #d3b79a;
++  border: 1px solid #d1d5db;
+   font-size: 0.95rem;
+   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+ }
+@@
+ input[type="text"]:focus,
+ input[type="number"]:focus,
+ input[type="date"]:focus {
+   outline: none;
+-  border-color: #b77939;
+-  box-shadow: 0 0 0 1px rgba(183, 121, 57, 0.5);
++  border-color: #2563eb;
++  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.4);
+ }
+@@
+ button {
+   border-radius: 999px;
+@@
+   padding: 0.5rem 1rem;
+   font-size: 0.9rem;
+   cursor: pointer;
+-  background: #b77939; /* marrom dourado */
+-  color: #fdf7f0;
++  background: #2563eb;
++  color: #f9fafb;
+@@
+   gap: 0.25rem;
+   transition: background 0.15s ease, transform 0.05s ease, box-shadow 0.15s ease;
+-  box-shadow: 0 1px 3px rgba(89, 48, 24, 0.4);
++  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.4);
+ }
+ 
+ button:hover:not(:disabled) {
+-  background: #995b22;
++  background: #1d4ed8;
+   transform: translateY(-1px);
+-  box-shadow: 0 4px 6px rgba(89, 48, 24, 0.5);
++  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.4);
+ }
+@@
+ button:active:not(:disabled) {
+   transform: translateY(0);
+-  box-shadow: 0 1px 3px rgba(89, 48, 24, 0.4);
++  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.4);
+ }
+@@
+ button.secondary {
+-  background: #e8d4bf;
+-  color: #3b2a1a;
++  background: #e5e7eb;
++  color: #111827;
+   box-shadow: none;
+ }
+ 
+ button.secondary:hover:not(:disabled) {
+-  background: #dec5aa;
++  background: #d1d5db;
+ }
+@@
+ button.danger {
+-  background: #8b2a1a;
+-  box-shadow: 0 1px 3px rgba(78, 20, 11, 0.5);
++  background: #dc2626;
++  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.4);
+ }
+ 
+ button.danger:hover:not(:disabled) {
+-  background: #701f13;
+-  box-shadow: 0 4px 6px rgba(78, 20, 11, 0.6);
++  background: #b91c1c;
++  box-shadow: 0 4px 6px rgba(220, 38, 38, 0.4);
+ }
+@@
+ .alert-error {
+-  background: #fbe9e4;
+-  color: #7a2614;
+-  border: 1px solid #f1c4b2;
++  background: #fef2f2;
++  color: #b91c1c;
++  border: 1px solid #fecaca;
+ }
+@@
+ .tasks-table thead th {
+   text-align: left;
+   padding: 0.5rem 0.5rem;
+-  border-bottom: 1px solid #e2c9b3;
+-  background: #f8eee4;
++  border-bottom: 1px solid #e5e7eb;
++  background: #f9fafb;
+ }
+@@
+ .tasks-table tbody td {
+   padding: 0.5rem 0.5rem;
+-  border-bottom: 1px solid #e2c9b3;
++  border-bottom: 1px solid #e5e7eb;
+ }
+@@
+ .task-row:nth-child(even) {
+-  background: #f7ece0;
++  background: #f9fafb;
+ }
+@@
+ .task-row-highlight {
+-  background: #f4e0b5 !important; /* destaque em amarelo puxando para marrom */
++  background: #fef9c3 !important;
+ }
+@@
+ .tasks-table tfoot td {
+   padding: 0.6rem 0.5rem;
+   font-weight: 600;
+-  background: #f0e1d3;
++  background: #f3f4f6;
+ }
+@@
+ .footer-label {
+-  color: #5a4331;
++  color: #4b5563;
+ }
+@@
+ .footer-total {
+   text-align: right;
+-  color: #3b2a1a;
++  color: #1f2937;
+ }
+@@
+ .modal-backdrop {
+   position: fixed;
+   inset: 0;
+-  background: rgba(32, 18, 9, 0.6);
++  background: rgba(15, 23, 42, 0.5);
+@@
+ .modal {
+-  background: #fff7ee;
++  background: #ffffff;
+@@
+   width: 100%;
+   max-width: 480px;
+-  box-shadow: 0 10px 25px rgba(64, 34, 17, 0.6);
++  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.5);
+ }
+*** End Patch
+
+[Tool result] ApplyPatch
+
+assistant:
+[Tool call] ApplyPatch*** Begin Patch
+*** Update File: c:\Users\Alice Barbosa\.cursor\frontend\src\App.jsx
+@@
+-      <footer>
+-        <small>Sistema Lista de Tarefas - Prova de estágio</small>
+-      </footer>
++      <footer>
++        <small>Sistema Lista de Tarefas - Teste prático</small>
++      </footer>
+*** End Patch
+
+[Tool result] ApplyPatch
+
+assistant:
+Pronto, ajustei tudo:
+
+- **CSS** voltou para a estilização antiga (tons de cinza/azul padrão que você tinha antes).
+- No rodapé do app, o texto agora é:  
+  **`Sistema Lista de Tarefas - Teste prático`**
+
+É só salvar e atualizar a página do frontend para ver as mudanças.
