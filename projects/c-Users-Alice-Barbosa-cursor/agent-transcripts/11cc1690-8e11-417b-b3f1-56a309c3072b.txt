@@ -202,7 +202,7 @@ assistant:
 +}
 +
 +// Listar tarefas
-+app.get("/api/tarefas", (req, res) => {
++app.get(`${BASE_URL}/api/tarefas`, (req, res) => {
 +  db.all("SELECT * FROM tarefas ORDER BY ordem ASC", [], (err, rows) => {
 +    if (err) {
 +      console.error(err);
@@ -213,7 +213,7 @@ assistant:
 +});
 +
 +// Incluir tarefa
-+app.post("/api/tarefas", (req, res) => {
++app.post(`${BASE_URL}/api/tarefas`, (req, res) => {
 +  const { nome, custo, dataLimite } = req.body;
 +
 +  if (!nome || nome.trim() === "" || custo === undefined || dataLimite === undefined) {
@@ -577,7 +577,7 @@ assistant:
 +  function carregarTarefas() {
 +    setLoading(true);
 +    setError("");
-+    fetch("/api/tarefas")
++    fetch(`${BASE_URL}/api/tarefas`)
 +      .then((res) => {
 +        if (!res.ok) throw new Error("Erro ao buscar tarefas");
 +        return res.json();
@@ -653,7 +653,7 @@ assistant:
 +    };
 +
 +    setSalvandoNova(true);
-+    fetch("/api/tarefas", {
++    fetch(`${BASE_URL}/api/tarefas`, {
 +      method: "POST",
 +      headers: { "Content-Type": "application/json" },
 +      body: JSON.stringify(body),

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { formatCurrencyBR, formatDateISOToBR } from "./formatters";
-
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 const emptyForm = { nome: "", custo: "", dataLimite: "" };
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
   function carregarTarefas() {
     setLoading(true);
     setError("");
-    fetch("/api/tarefas")
+    fetch(`${BASE_URL}/api/tarefas`)
       .then((res) => {
         if (!res.ok) throw new Error("Erro ao buscar tarefas");
         return res.json();
@@ -92,7 +92,7 @@ function App() {
     };
 
     setSalvandoNova(true);
-    fetch("/api/tarefas", {
+    fetch(`${BASE_URL}/api/tarefas`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

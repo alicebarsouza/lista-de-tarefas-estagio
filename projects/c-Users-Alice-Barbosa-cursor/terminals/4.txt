@@ -44,7 +44,8 @@ Vim: Finished.
 
 error: there was a problem with the editor 'vi'
 Not committing merge; use 'git commit' to complete the merge.
-
+Alice Barbosa@Alice MINGW64 ~/.cursor (main|MERGING)
+Alice Barbosa@Alice MINGW64 ~/.cursor (main|MERGING)
 Alice Barbosa@Alice MINGW64 ~/.cursor (main|MERGING)
 $ git pull
 error: You have not concluded your merge (MERGE_HEAD exists).

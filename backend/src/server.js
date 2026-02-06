@@ -1,4 +1,5 @@
 require("dotenv").config();
+const BASE_URL = import.meta.env.VITE_API_URL || '';
 const express = require("express");
 const cors = require("cors");
 const db = require("./db");
@@ -20,7 +21,7 @@ function mapRow(row) {
 }
 
 // Listar tarefas
-app.get("/api/tarefas", (req, res) => {
+app.get(`${BASE_URL}/api/tarefas`, (req, res) => {
   db.all("SELECT * FROM tarefas ORDER BY ordem ASC", [], (err, rows) => {
     if (err) {
       console.error(err);
@@ -31,7 +32,7 @@ app.get("/api/tarefas", (req, res) => {
 });
 
 // Incluir tarefa
-app.post("/api/tarefas", (req, res) => {
+app.post(`${BASE_URL}/api/tarefas`, (req, res) => {
   const { nome, custo, dataLimite } = req.body;
 
   if (!nome || nome.trim() === "" || custo === undefined || dataLimite === undefined) {
@@ -75,7 +76,7 @@ app.post("/api/tarefas", (req, res) => {
 });
 
 // Editar tarefa (nome, custo, data_limite)
-app.put("/api/tarefas/:id", (req, res) => {
+app.put(`${BASE_URL}/api/tarefas/:id`, (req, res) => {
   const { id } = req.params;
   const { nome, custo, dataLimite } = req.body;
 
@@ -126,7 +127,7 @@ app.put("/api/tarefas/:id", (req, res) => {
 });
 
 // Excluir tarefa
-app.delete("/api/tarefas/:id", (req, res) => {
+app.delete(`${BASE_URL}/api/tarefas/:id`, (req, res) => {
   const { id } = req.params;
 
   const stmt = db.prepare("DELETE FROM tarefas WHERE id = ?");
@@ -143,7 +144,7 @@ app.delete("/api/tarefas/:id", (req, res) => {
 });
 
 // Mover para cima
-app.post("/api/tarefas/:id/mover-cima", (req, res) => {
+app.post(`${BASE_URL}/api/tarefas/:id/mover-cima`, (req, res) => {
   const { id } = req.params;
 
   db.get("SELECT * FROM tarefas WHERE id = ?", [id], (err, current) => {
@@ -215,7 +216,7 @@ app.post("/api/tarefas/:id/mover-cima", (req, res) => {
 });
 
 // Mover para baixo
-app.post("/api/tarefas/:id/mover-baixo", (req, res) => {
+app.post(`${BASE_URL}/api/tarefas/:id/mover-baixo`, (req, res) => {
   const { id } = req.params;
 
   db.get("SELECT * FROM tarefas WHERE id = ?", [id], (err, current) => {
