@@ -2,6 +2,7 @@
    /frontend/node_modules/
    /dist/
    .env
-   /ai-tracking
-   /skills-cursor
+   /ai-tracking/
+   /skills-cursor/
    /extensions/
+   *.sqlite
