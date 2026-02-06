@@ -1,6 +1,6 @@
 ## Sistema Lista de Tarefas
 
-Sistema web de lista de tarefas desenvolvido para prova de estágio, com frontend em **React + Vite** e backend em **Node.js + Express + SQLite**.
+Sistema web de lista de tarefas desenvolvido para prova de estágio, com frontend em **React** e backend em **Node.js + Express + SQLite**.
 
 ### Principais funcionalidades
 
