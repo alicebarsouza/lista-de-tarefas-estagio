@@ -1,5 +1,10 @@
-const path = require("path");
-const sqlite3 = require("sqlite3").verbose();
+import path from 'path';
+import sqlite3 from 'sqlite3';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const DB_PATH = process.env.DB_PATH || path.join(__dirname, "..", "database.sqlite");
 
@@ -23,5 +28,5 @@ function initDb() {
 
 const db = initDb();
 
-module.exports = db;
+export default db;
 

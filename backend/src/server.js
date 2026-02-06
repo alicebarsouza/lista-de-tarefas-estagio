@@ -1,8 +1,7 @@
-require("dotenv").config();
-const BASE_URL = import.meta.env.VITE_API_URL || '';
-const express = require("express");
-const cors = require("cors");
-const db = require("./db");
+import 'dotenv/config';
+import express from 'express';
+import cors from 'cors';
+import db from './db.js';
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -21,7 +20,7 @@ function mapRow(row) {
 }
 
 // Listar tarefas
-app.get(`${BASE_URL}/api/tarefas`, (req, res) => {
+app.get(`/api/tarefas`, (req, res) => {
   db.all("SELECT * FROM tarefas ORDER BY ordem ASC", [], (err, rows) => {
     if (err) {
       console.error(err);
@@ -32,7 +31,7 @@ app.get(`${BASE_URL}/api/tarefas`, (req, res) => {
 });
 
 // Incluir tarefa
-app.post(`${BASE_URL}/api/tarefas`, (req, res) => {
+app.post(`/api/tarefas`, (req, res) => {
   const { nome, custo, dataLimite } = req.body;
 
   if (!nome || nome.trim() === "" || custo === undefined || dataLimite === undefined) {
@@ -76,7 +75,7 @@ app.post(`${BASE_URL}/api/tarefas`, (req, res) => {
 });
 
 // Editar tarefa (nome, custo, data_limite)
-app.put(`${BASE_URL}/api/tarefas/:id`, (req, res) => {
+app.put(`/api/tarefas/:id`, (req, res) => {
   const { id } = req.params;
   const { nome, custo, dataLimite } = req.body;
 
@@ -127,7 +126,7 @@ app.put(`${BASE_URL}/api/tarefas/:id`, (req, res) => {
 });
 
 // Excluir tarefa
-app.delete(`${BASE_URL}/api/tarefas/:id`, (req, res) => {
+app.delete(`/api/tarefas/:id`, (req, res) => {
   const { id } = req.params;
 
   const stmt = db.prepare("DELETE FROM tarefas WHERE id = ?");
@@ -144,7 +143,7 @@ app.delete(`${BASE_URL}/api/tarefas/:id`, (req, res) => {
 });
 
 // Mover para cima
-app.post(`${BASE_URL}/api/tarefas/:id/mover-cima`, (req, res) => {
+app.post(`/api/tarefas/:id/mover-cima`, (req, res) => {
   const { id } = req.params;
 
   db.get("SELECT * FROM tarefas WHERE id = ?", [id], (err, current) => {
@@ -216,7 +215,7 @@ app.post(`${BASE_URL}/api/tarefas/:id/mover-cima`, (req, res) => {
 });
 
 // Mover para baixo
-app.post(`${BASE_URL}/api/tarefas/:id/mover-baixo`, (req, res) => {
+app.post(`/api/tarefas/:id/mover-baixo`, (req, res) => {
   const { id } = req.params;
 
   db.get("SELECT * FROM tarefas WHERE id = ?", [id], (err, current) => {
