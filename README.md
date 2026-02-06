@@ -17,5 +17,4 @@ Sistema web de lista de tarefas desenvolvido para prova de estágio, com fronten
 
 ### Acesso à aplicação
 
-- **Link da aplicação em produção**: _(substitua abaixo pelo link após o deploy)_  
-  `https://SEU_LINK_DA_APLICACAO_AQUI`
+- **Link da aplicação em produção**:`http://localhost:5173/`
