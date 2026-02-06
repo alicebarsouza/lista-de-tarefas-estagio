@@ -2,332 +2,9 @@
 pid: 38848
 cwd: |
   C:/Users/Alice Barbosa/.cursor
-last_command: git pull
+last_command: git rm -r --cached frontend/node_modules
 last_exit_code: 0
 ---
- delete mode 100644 backend/node_modules/mkdirp-classic/package.json
- delete mode 100644 backend/node_modules/mkdirp/CHANGELOG.md
- delete mode 100644 backend/node_modules/mkdirp/LICENSE
- delete mode 100644 backend/node_modules/mkdirp/bin/cmd.js
- delete mode 100644 backend/node_modules/mkdirp/index.js
- delete mode 100644 backend/node_modules/mkdirp/lib/find-made.js
- delete mode 100644 backend/node_modules/mkdirp/lib/mkdirp-manual.js
- delete mode 100644 backend/node_modules/mkdirp/lib/mkdirp-native.js
- delete mode 100644 backend/node_modules/mkdirp/lib/opts-arg.js
- delete mode 100644 backend/node_modules/mkdirp/lib/path-arg.js
- delete mode 100644 backend/node_modules/mkdirp/lib/use-native.js
- delete mode 100644 backend/node_modules/mkdirp/package.json
- delete mode 100644 backend/node_modules/mkdirp/readme.markdown
- delete mode 100644 backend/node_modules/ms/index.js
- delete mode 100644 backend/node_modules/ms/license.md
- delete mode 100644 backend/node_modules/ms/package.json
- delete mode 100644 backend/node_modules/ms/readme.md
- delete mode 100644 backend/node_modules/napi-build-utils/.github/workflows/run-npm-tests.yml
- delete mode 100644 backend/node_modules/napi-build-utils/LICENSE
- delete mode 100644 backend/node_modules/napi-build-utils/README.md
- delete mode 100644 backend/node_modules/napi-build-utils/index.js
- delete mode 100644 backend/node_modules/napi-build-utils/index.md
- delete mode 100644 backend/node_modules/napi-build-utils/package.json
- delete mode 100644 backend/node_modules/negotiator/HISTORY.md
- delete mode 100644 backend/node_modules/negotiator/LICENSE
- delete mode 100644 backend/node_modules/negotiator/README.md
- delete mode 100644 backend/node_modules/negotiator/index.js
- delete mode 100644 backend/node_modules/negotiator/lib/charset.js
- delete mode 100644 backend/node_modules/negotiator/lib/encoding.js
- delete mode 100644 backend/node_modules/negotiator/lib/language.js
- delete mode 100644 backend/node_modules/negotiator/lib/mediaType.js
- delete mode 100644 backend/node_modules/negotiator/package.json
- delete mode 100644 backend/node_modules/node-abi/LICENSE
- delete mode 100644 backend/node_modules/node-abi/README.md
- delete mode 100644 backend/node_modules/node-abi/abi_registry.json
- delete mode 100644 backend/node_modules/node-abi/index.js
- delete mode 100644 backend/node_modules/node-abi/package.json
- delete mode 100644 backend/node_modules/node-addon-api/LICENSE.md
- delete mode 100644 backend/node_modules/node-addon-api/README.md
- delete mode 100644 backend/node_modules/node-addon-api/common.gypi
- delete mode 100644 backend/node_modules/node-addon-api/except.gypi
- delete mode 100644 backend/node_modules/node-addon-api/index.js
- delete mode 100644 backend/node_modules/node-addon-api/napi-inl.deprecated.h        
- delete mode 100644 backend/node_modules/node-addon-api/napi-inl.h
- delete mode 100644 backend/node_modules/node-addon-api/napi.h
- delete mode 100644 backend/node_modules/node-addon-api/node_addon_api.gyp
- delete mode 100644 backend/node_modules/node-addon-api/node_api.gyp
- delete mode 100644 backend/node_modules/node-addon-api/noexcept.gypi
- delete mode 100644 backend/node_modules/node-addon-api/nothing.c
- delete mode 100644 backend/node_modules/node-addon-api/package-support.json
- delete mode 100644 backend/node_modules/node-addon-api/package.json
- delete mode 100644 backend/node_modules/node-addon-api/tools/README.md
- delete mode 100644 backend/node_modules/node-addon-api/tools/check-napi.js
- delete mode 100644 backend/node_modules/node-addon-api/tools/clang-format.js        
- delete mode 100644 backend/node_modules/node-addon-api/tools/conversion.js
- delete mode 100644 backend/node_modules/node-addon-api/tools/eslint-format.js       
- delete mode 100644 backend/node_modules/node-gyp/.github/ISSUE_TEMPLATE.md
- delete mode 100644 backend/node_modules/node-gyp/.github/PULL_REQUEST_TEMPLATE.md   
- delete mode 100644 backend/node_modules/node-gyp/.github/workflows/release-please.yml
- delete mode 100644 backend/node_modules/node-gyp/.github/workflows/tests.yml        
- delete mode 100644 backend/node_modules/node-gyp/.github/workflows/visual-studio.yml
- delete mode 100644 backend/node_modules/node-gyp/CHANGELOG.md
- delete mode 100644 backend/node_modules/node-gyp/CONTRIBUTING.md
- delete mode 100644 backend/node_modules/node-gyp/LICENSE
- delete mode 100644 backend/node_modules/node-gyp/README.md
- delete mode 100644 backend/node_modules/node-gyp/addon.gypi
- delete mode 100644 backend/node_modules/node-gyp/bin/node-gyp.js
- delete mode 100644 backend/node_modules/node-gyp/docs/Common-issues.md
- delete mode 100644 backend/node_modules/node-gyp/docs/Error-pre-versions-of-node-cannot-be-installed.md
- delete mode 100644 backend/node_modules/node-gyp/docs/Home.md
- delete mode 100644 backend/node_modules/node-gyp/docs/Linking-to-OpenSSL.md
- delete mode 100644 backend/node_modules/node-gyp/docs/Updating-npm-bundled-node-gyp.md
- delete mode 100644 backend/node_modules/node-gyp/docs/binding.gyp-files-in-the-wild.md
- delete mode 100644 backend/node_modules/node-gyp/gyp/.flake8
- delete mode 100644 backend/node_modules/node-gyp/gyp/.github/workflows/Python_tests.yml
- delete mode 100644 backend/node_modules/node-gyp/gyp/.github/workflows/node-gyp.yml 
- delete mode 100644 backend/node_modules/node-gyp/gyp/.github/workflows/nodejs-windows.yml
- delete mode 100644 backend/node_modules/node-gyp/gyp/.github/workflows/release-please.yml
- delete mode 100644 backend/node_modules/node-gyp/gyp/AUTHORS
- delete mode 100644 backend/node_modules/node-gyp/gyp/CHANGELOG.md
- delete mode 100644 backend/node_modules/node-gyp/gyp/CODE_OF_CONDUCT.md
- delete mode 100644 backend/node_modules/node-gyp/gyp/CONTRIBUTING.md
- delete mode 100644 backend/node_modules/node-gyp/gyp/LICENSE
- delete mode 100644 backend/node_modules/node-gyp/gyp/README.md
- delete mode 100644 backend/node_modules/node-gyp/gyp/data/win/large-pdb-shim.cc     
- delete mode 100644 backend/node_modules/node-gyp/gyp/gyp
- delete mode 100644 backend/node_modules/node-gyp/gyp/gyp.bat
- delete mode 100644 backend/node_modules/node-gyp/gyp/gyp_main.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSNew.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSProject.py       
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings.py      
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings_test.py 
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSToolFile.py      
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSUserFile.py      
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSUtil.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/MSVSVersion.py       
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/__init__.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/common.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/common_test.py       
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/easy_xml_test.py     
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py        
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/android.py 
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py   
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/compile_commands_json.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/dump_dependency_json.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/eclipse.py 
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/gypd.py    
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/gypsh.py   
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py    
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py    
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs_test.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py   
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja_test.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode.py   
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode_test.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/input.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/input_test.py        
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py    
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py      
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/simple_copy.py       
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py   
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/xcode_ninja.py       
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py    
- delete mode 100644 backend/node_modules/node-gyp/gyp/pylib/gyp/xml_fix.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/requirements_dev.txt
- delete mode 100644 backend/node_modules/node-gyp/gyp/setup.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/test_gyp.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/README
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/Xcode/README
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.pbfilespec
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.xclangspec
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/emacs/README
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/emacs/gyp-tests.el       
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/emacs/gyp.el
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh  
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/emacs/testdata/media.gyp 
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/emacs/testdata/media.gyp.fontified
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/graphviz.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/pretty_gyp.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/pretty_sln.py
- delete mode 100644 backend/node_modules/node-gyp/gyp/tools/pretty_vcproj.py
- delete mode 100644 backend/node_modules/node-gyp/lib/Find-VisualStudio.cs
- delete mode 100644 backend/node_modules/node-gyp/lib/build.js
- delete mode 100644 backend/node_modules/node-gyp/lib/clean.js
- delete mode 100644 backend/node_modules/node-gyp/lib/configure.js
- delete mode 100644 backend/node_modules/node-gyp/lib/create-config-gypi.js
- delete mode 100644 backend/node_modules/node-gyp/lib/find-node-directory.js
- delete mode 100644 backend/node_modules/node-gyp/lib/find-python.js
- delete mode 100644 backend/node_modules/node-gyp/lib/find-visualstudio.js
- delete mode 100644 backend/node_modules/node-gyp/lib/install.js
- delete mode 100644 backend/node_modules/node-gyp/lib/list.js
- delete mode 100644 backend/node_modules/node-gyp/lib/node-gyp.js
- delete mode 100644 backend/node_modules/node-gyp/lib/process-release.js
- delete mode 100644 backend/node_modules/node-gyp/lib/rebuild.js
- delete mode 100644 backend/node_modules/node-gyp/lib/remove.js
- delete mode 100644 backend/node_modules/node-gyp/lib/util.js
- delete mode 100644 backend/node_modules/node-gyp/macOS_Catalina.md
- delete mode 100644 backend/node_modules/node-gyp/macOS_Catalina_acid_test.sh        
- delete mode 100644 backend/node_modules/node-gyp/package.json
- delete mode 100644 backend/node_modules/node-gyp/src/win_delay_load_hook.cc
- delete mode 100644 backend/node_modules/node-gyp/test/common.js
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2017_BuildTools_minimal.txt
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2017_Community_workload.txt
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2017_Express.txt  
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2017_Unusable.txt 
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2019_BuildTools_minimal.txt
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2019_Community_workload.txt
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/VS_2019_Preview.txt  
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/ca-bundle.crt        
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/ca.crt
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/nodedir/include/node/config.gypi
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/server.crt
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/server.key
- delete mode 100644 backend/node_modules/node-gyp/test/fixtures/test-charmap.py      
- delete mode 100644 backend/node_modules/node-gyp/test/process-exec-sync.js
- delete mode 100644 backend/node_modules/node-gyp/test/simple-proxy.js
- delete mode 100644 backend/node_modules/node-gyp/test/test-addon.js
- delete mode 100644 backend/node_modules/node-gyp/test/test-configure-python.js      
- delete mode 100644 backend/node_modules/node-gyp/test/test-create-config-gypi.js    
- delete mode 100644 backend/node_modules/node-gyp/test/test-download.js
- delete mode 100644 backend/node_modules/node-gyp/test/test-find-accessible-sync.js  
- delete mode 100644 backend/node_modules/node-gyp/test/test-find-node-directory.js   
- delete mode 100644 backend/node_modules/node-gyp/test/test-find-python.js
- delete mode 100644 backend/node_modules/node-gyp/test/test-find-visualstudio.js     
- delete mode 100644 backend/node_modules/node-gyp/test/test-install.js
- delete mode 100644 backend/node_modules/node-gyp/test/test-options.js
- delete mode 100644 backend/node_modules/node-gyp/test/test-process-release.js       
- delete mode 100644 backend/node_modules/node-gyp/update-gyp.py
- delete mode 100644 backend/node_modules/nodemon/.prettierrc.json
- delete mode 100644 backend/node_modules/nodemon/LICENSE
- delete mode 100644 backend/node_modules/nodemon/README.md
- delete mode 100644 backend/node_modules/nodemon/bin/nodemon.js
- delete mode 100644 backend/node_modules/nodemon/bin/windows-kill.exe
- delete mode 100644 backend/node_modules/nodemon/doc/cli/authors.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/config.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/help.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/logo.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/options.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/topics.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/usage.txt
- delete mode 100644 backend/node_modules/nodemon/doc/cli/whoami.txt
- delete mode 100644 backend/node_modules/nodemon/index.d.ts
- delete mode 100644 backend/node_modules/nodemon/jsconfig.json
- delete mode 100644 backend/node_modules/nodemon/lib/cli/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/cli/parse.js
- delete mode 100644 backend/node_modules/nodemon/lib/config/command.js
- delete mode 100644 backend/node_modules/nodemon/lib/config/defaults.js
- delete mode 100644 backend/node_modules/nodemon/lib/config/exec.js
- delete mode 100644 backend/node_modules/nodemon/lib/config/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/config/load.js
- delete mode 100644 backend/node_modules/nodemon/lib/help/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/monitor/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/monitor/match.js
- delete mode 100644 backend/node_modules/nodemon/lib/monitor/run.js
- delete mode 100644 backend/node_modules/nodemon/lib/monitor/signals.js
- delete mode 100644 backend/node_modules/nodemon/lib/monitor/watch.js
- delete mode 100644 backend/node_modules/nodemon/lib/nodemon.js
- delete mode 100644 backend/node_modules/nodemon/lib/rules/add.js
- delete mode 100644 backend/node_modules/nodemon/lib/rules/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/rules/parse.js
- delete mode 100644 backend/node_modules/nodemon/lib/spawn.js
- delete mode 100644 backend/node_modules/nodemon/lib/utils/bus.js
- delete mode 100644 backend/node_modules/nodemon/lib/utils/clone.js
- delete mode 100644 backend/node_modules/nodemon/lib/utils/colour.js
- delete mode 100644 backend/node_modules/nodemon/lib/utils/index.js
- delete mode 100644 backend/node_modules/nodemon/lib/utils/log.js
- delete mode 100644 backend/node_modules/nodemon/lib/utils/merge.js
- delete mode 100644 backend/node_modules/nodemon/lib/version.js
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/LICENSE
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/README.md        
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/package.json     
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/src/browser.js   
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/src/common.js    
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/src/index.js     
- delete mode 100644 backend/node_modules/nodemon/node_modules/debug/src/node.js      
- delete mode 100644 backend/node_modules/nodemon/node_modules/ms/index.js
- delete mode 100644 backend/node_modules/nodemon/node_modules/ms/license.md
- delete mode 100644 backend/node_modules/nodemon/node_modules/ms/package.json        
- delete mode 100644 backend/node_modules/nodemon/node_modules/ms/readme.md
- delete mode 100644 backend/node_modules/nodemon/package.json
- delete mode 100644 backend/node_modules/nopt/CHANGELOG.md
- delete mode 100644 backend/node_modules/nopt/LICENSE
- delete mode 100644 backend/node_modules/nopt/README.md
- delete mode 100644 backend/node_modules/nopt/bin/nopt.js
- delete mode 100644 backend/node_modules/nopt/lib/nopt.js
- delete mode 100644 backend/node_modules/nopt/package.json
- delete mode 100644 backend/node_modules/normalize-path/LICENSE
- delete mode 100644 backend/node_modules/normalize-path/README.md
- delete mode 100644 backend/node_modules/normalize-path/index.js
- delete mode 100644 backend/node_modules/normalize-path/package.json
- delete mode 100644 backend/node_modules/npmlog/LICENSE.md
- delete mode 100644 backend/node_modules/npmlog/README.md
- delete mode 100644 backend/node_modules/npmlog/lib/log.js
- delete mode 100644 backend/node_modules/npmlog/package.json
- delete mode 100644 backend/node_modules/object-assign/index.js
- delete mode 100644 backend/node_modules/object-assign/license
- delete mode 100644 backend/node_modules/object-assign/package.json
- delete mode 100644 backend/node_modules/object-assign/readme.md
- delete mode 100644 backend/node_modules/object-inspect/.eslintrc
- delete mode 100644 backend/node_modules/object-inspect/.github/FUNDING.yml
- delete mode 100644 backend/node_modules/object-inspect/.nycrc
- delete mode 100644 backend/node_modules/object-inspect/CHANGELOG.md
- delete mode 100644 backend/node_modules/object-inspect/LICENSE
- delete mode 100644 backend/node_modules/object-inspect/example/all.js
- delete mode 100644 backend/node_modules/object-inspect/example/circular.js
- delete mode 100644 backend/node_modules/object-inspect/example/fn.js
- delete mode 100644 backend/node_modules/object-inspect/example/inspect.js
- delete mode 100644 backend/node_modules/object-inspect/index.js
- delete mode 100644 backend/node_modules/object-inspect/package-support.json
- delete mode 100644 backend/node_modules/object-inspect/package.json
- delete mode 100644 backend/node_modules/object-inspect/readme.markdown
- delete mode 100644 backend/node_modules/object-inspect/test-core-js.js
- delete mode 100644 backend/node_modules/object-inspect/test/bigint.js
- delete mode 100644 backend/node_modules/object-inspect/test/browser/dom.js
- delete mode 100644 backend/node_modules/object-inspect/test/circular.js
- delete mode 100644 backend/node_modules/object-inspect/test/deep.js
- delete mode 100644 backend/node_modules/object-inspect/test/element.js
- delete mode 100644 backend/node_modules/object-inspect/test/err.js
- delete mode 100644 backend/node_modules/object-inspect/test/fakes.js
- delete mode 100644 backend/node_modules/object-inspect/test/fn.js
- delete mode 100644 backend/node_modules/object-inspect/test/global.js
- delete mode 100644 backend/node_modules/object-inspect/test/has.js
- delete mode 100644 backend/node_modules/object-inspect/test/holes.js
- delete mode 100644 backend/node_modules/object-inspect/test/indent-option.js        
- delete mode 100644 backend/node_modules/object-inspect/test/inspect.js
- delete mode 100644 backend/node_modules/object-inspect/test/lowbyte.js
- delete mode 100644 backend/node_modules/object-inspect/test/number.js
- delete mode 100644 backend/node_modules/object-inspect/test/quoteStyle.js
- delete mode 100644 backend/node_modules/object-inspect/test/toStringTag.js
- delete mode 100644 backend/node_modules/object-inspect/test/undef.js
- delete mode 100644 backend/node_modules/object-inspect/test/values.js
- delete mode 100644 backend/node_modules/object-inspect/util.inspect.js
- delete mode 100644 backend/node_modules/on-finished/HISTORY.md
- delete mode 100644 backend/node_modules/on-finished/LICENSE
- delete mode 100644 backend/node_modules/on-finished/README.md
- delete mode 100644 backend/node_modules/on-finished/index.js
- delete mode 100644 backend/node_modules/on-finished/package.json
- delete mode 100644 backend/node_modules/once/LICENSE
- delete mode 100644 backend/node_modules/once/README.md
- delete mode 100644 backend/node_modules/once/once.js
- delete mode 100644 backend/node_modules/once/package.json
- delete mode 100644 backend/node_modules/p-map/index.d.ts
- delete mode 100644 backend/node_modules/p-map/index.js
- delete mode 100644 backend/node_modules/p-map/license
- delete mode 100644 backend/node_modules/p-map/package.json
- delete mode 100644 backend/node_modules/p-map/readme.md
- delete mode 100644 backend/node_modules/parseurl/HISTORY.md
- delete mode 100644 backend/node_modules/parseurl/LICENSE
- delete mode 100644 backend/node_modules/parseurl/README.md
- delete mode 100644 backend/node_modules/parseurl/index.js
- delete mode 100644 backend/node_modules/parseurl/package.json
- delete mode 100644 backend/node_modules/path-is-absolute/index.js
- delete mode 100644 backend/node_modules/path-is-absolute/license
- delete mode 100644 backend/node_modules/path-is-absolute/package.json
- delete mode 100644 backend/node_modules/path-is-absolute/readme.md
- delete mode 100644 backend/node_modules/path-to-regexp/LICENSE
- delete mode 100644 backend/node_modules/path-to-regexp/Readme.md
  delete mode 100644 backend/node_modules/path-to-regexp/index.js
  delete mode 100644 backend/node_modules/path-to-regexp/package.json
  delete mode 100644 backend/node_modules/picomatch/CHANGELOG.md
@@ -954,6 +631,344 @@ $ git fetch
 Alice Barbosa@Alice MINGW64 ~/.cursor (main)
 $ git pull
 Already up to date.
+
+Alice Barbosa@Alice MINGW64 ~/.cursor (main)
+$ git rm -r --cached frontend/node_modules
+rm 'frontend/node_modules/.bin/esbuild'
+rm 'frontend/node_modules/.bin/esbuild.cmd'
+rm 'frontend/node_modules/.bin/esbuild.ps1'
+rm 'frontend/node_modules/.bin/loose-envify'
+rm 'frontend/node_modules/.bin/loose-envify.cmd'
+rm 'frontend/node_modules/.bin/loose-envify.ps1'
+rm 'frontend/node_modules/.bin/nanoid'
+rm 'frontend/node_modules/.bin/nanoid.cmd'
+rm 'frontend/node_modules/.bin/nanoid.ps1'
+rm 'frontend/node_modules/.bin/rollup'
+rm 'frontend/node_modules/.bin/rollup.cmd'
+rm 'frontend/node_modules/.bin/rollup.ps1'
+rm 'frontend/node_modules/.bin/vite'
+rm 'frontend/node_modules/.bin/vite.cmd'
+rm 'frontend/node_modules/.bin/vite.ps1'
+rm 'frontend/node_modules/.package-lock.json'
+rm 'frontend/node_modules/.vite/deps/_metadata.json'
+rm 'frontend/node_modules/.vite/deps/chunk-REFQX4J5.js'
+rm 'frontend/node_modules/.vite/deps/chunk-REFQX4J5.js.map'
+rm 'frontend/node_modules/.vite/deps/package.json'
+rm 'frontend/node_modules/.vite/deps/react-dom_client.js'
+rm 'frontend/node_modules/.vite/deps/react-dom_client.js.map'
+rm 'frontend/node_modules/.vite/deps/react.js'
+rm 'frontend/node_modules/.vite/deps/react.js.map'
+rm 'frontend/node_modules/.vite/deps/react_jsx-dev-runtime.js'
+rm 'frontend/node_modules/.vite/deps/react_jsx-dev-runtime.js.map'
+rm 'frontend/node_modules/.vite/deps/react_jsx-runtime.js'
+rm 'frontend/node_modules/.vite/deps/react_jsx-runtime.js.map'
+rm 'frontend/node_modules/@esbuild/win32-x64/README.md'
+rm 'frontend/node_modules/@esbuild/win32-x64/esbuild.exe'
+rm 'frontend/node_modules/@esbuild/win32-x64/package.json'
+rm 'frontend/node_modules/@rolldown/pluginutils/LICENSE'
+rm 'frontend/node_modules/@rolldown/pluginutils/dist/index.cjs'
+rm 'frontend/node_modules/@rolldown/pluginutils/dist/index.d.cts'
+rm 'frontend/node_modules/@rolldown/pluginutils/dist/index.d.ts'
+rm 'frontend/node_modules/@rolldown/pluginutils/dist/index.js'
+rm 'frontend/node_modules/@rolldown/pluginutils/package.json'
+rm 'frontend/node_modules/@rollup/rollup-win32-x64-gnu/README.md'
+rm 'frontend/node_modules/@rollup/rollup-win32-x64-gnu/package.json'
+rm 'frontend/node_modules/@rollup/rollup-win32-x64-gnu/rollup.win32-x64-gnu.node'    
+rm 'frontend/node_modules/@rollup/rollup-win32-x64-msvc/README.md'
+rm 'frontend/node_modules/@rollup/rollup-win32-x64-msvc/package.json'
+rm 'frontend/node_modules/@rollup/rollup-win32-x64-msvc/rollup.win32-x64-msvc.node'  
+rm 'frontend/node_modules/@swc/core-win32-x64-msvc/README.md'
+rm 'frontend/node_modules/@swc/core-win32-x64-msvc/package.json'
+rm 'frontend/node_modules/@swc/core-win32-x64-msvc/swc.win32-x64-msvc.node'
+rm 'frontend/node_modules/@swc/core/README.md'
+rm 'frontend/node_modules/@swc/core/Visitor.d.ts'
+rm 'frontend/node_modules/@swc/core/Visitor.js'
+rm 'frontend/node_modules/@swc/core/binding.d.ts'
+rm 'frontend/node_modules/@swc/core/binding.js'
+rm 'frontend/node_modules/@swc/core/index.d.ts'
+rm 'frontend/node_modules/@swc/core/index.js'
+rm 'frontend/node_modules/@swc/core/package.json'
+rm 'frontend/node_modules/@swc/core/postinstall.js'
+rm 'frontend/node_modules/@swc/core/spack.d.ts'
+rm 'frontend/node_modules/@swc/core/spack.js'
+rm 'frontend/node_modules/@swc/core/util.d.ts'
+rm 'frontend/node_modules/@swc/core/util.js'
+rm 'frontend/node_modules/@swc/counter/CHANGELOG.md'
+rm 'frontend/node_modules/@swc/counter/README.md'
+rm 'frontend/node_modules/@swc/counter/index.js'
+rm 'frontend/node_modules/@swc/counter/package.json'
+rm 'frontend/node_modules/@swc/types/LICENSE'
+rm 'frontend/node_modules/@swc/types/README.md'
+rm 'frontend/node_modules/@swc/types/assumptions.d.ts'
+rm 'frontend/node_modules/@swc/types/assumptions.js'
+rm 'frontend/node_modules/@swc/types/index.d.ts'
+rm 'frontend/node_modules/@swc/types/index.js'
+rm 'frontend/node_modules/@swc/types/package.json'
+rm 'frontend/node_modules/@types/estree/LICENSE'
+rm 'frontend/node_modules/@types/estree/README.md'
+rm 'frontend/node_modules/@types/estree/flow.d.ts'
+rm 'frontend/node_modules/@types/estree/index.d.ts'
+rm 'frontend/node_modules/@types/estree/package.json'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/LICENSE'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/README.md'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/index.cjs'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/index.d.cts'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/index.d.ts'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/index.js'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/package.json'
+rm 'frontend/node_modules/@vitejs/plugin-react-swc/refresh-runtime.js'
+rm 'frontend/node_modules/esbuild/LICENSE.md'
+rm 'frontend/node_modules/esbuild/README.md'
+rm 'frontend/node_modules/esbuild/bin/esbuild'
+rm 'frontend/node_modules/esbuild/install.js'
+rm 'frontend/node_modules/esbuild/lib/main.d.ts'
+rm 'frontend/node_modules/esbuild/lib/main.js'
+rm 'frontend/node_modules/esbuild/package.json'
+rm 'frontend/node_modules/js-tokens/CHANGELOG.md'
+rm 'frontend/node_modules/js-tokens/LICENSE'
+rm 'frontend/node_modules/js-tokens/README.md'
+rm 'frontend/node_modules/js-tokens/index.js'
+rm 'frontend/node_modules/js-tokens/package.json'
+rm 'frontend/node_modules/loose-envify/LICENSE'
+rm 'frontend/node_modules/loose-envify/README.md'
+rm 'frontend/node_modules/loose-envify/cli.js'
+rm 'frontend/node_modules/loose-envify/custom.js'
+rm 'frontend/node_modules/loose-envify/index.js'
+rm 'frontend/node_modules/loose-envify/loose-envify.js'
+rm 'frontend/node_modules/loose-envify/package.json'
+rm 'frontend/node_modules/loose-envify/replace.js'
+rm 'frontend/node_modules/nanoid/LICENSE'
+rm 'frontend/node_modules/nanoid/README.md'
+rm 'frontend/node_modules/nanoid/async/index.browser.cjs'
+rm 'frontend/node_modules/nanoid/async/index.browser.js'
+rm 'frontend/node_modules/nanoid/async/index.cjs'
+rm 'frontend/node_modules/nanoid/async/index.d.ts'
+rm 'frontend/node_modules/nanoid/async/index.js'
+rm 'frontend/node_modules/nanoid/async/index.native.js'
+rm 'frontend/node_modules/nanoid/async/package.json'
+rm 'frontend/node_modules/nanoid/bin/nanoid.cjs'
+rm 'frontend/node_modules/nanoid/index.browser.cjs'
+rm 'frontend/node_modules/nanoid/index.browser.js'
+rm 'frontend/node_modules/nanoid/index.cjs'
+rm 'frontend/node_modules/nanoid/index.d.cts'
+rm 'frontend/node_modules/nanoid/index.d.ts'
+rm 'frontend/node_modules/nanoid/index.js'
+rm 'frontend/node_modules/nanoid/nanoid.js'
+rm 'frontend/node_modules/nanoid/non-secure/index.cjs'
+rm 'frontend/node_modules/nanoid/non-secure/index.d.ts'
+rm 'frontend/node_modules/nanoid/non-secure/index.js'
+rm 'frontend/node_modules/nanoid/non-secure/package.json'
+rm 'frontend/node_modules/nanoid/package.json'
+rm 'frontend/node_modules/nanoid/url-alphabet/index.cjs'
+rm 'frontend/node_modules/nanoid/url-alphabet/index.js'
+rm 'frontend/node_modules/nanoid/url-alphabet/package.json'
+rm 'frontend/node_modules/picocolors/LICENSE'
+rm 'frontend/node_modules/picocolors/README.md'
+rm 'frontend/node_modules/picocolors/package.json'
+rm 'frontend/node_modules/picocolors/picocolors.browser.js'
+rm 'frontend/node_modules/picocolors/picocolors.d.ts'
+rm 'frontend/node_modules/picocolors/picocolors.js'
+rm 'frontend/node_modules/picocolors/types.d.ts'
+rm 'frontend/node_modules/postcss/LICENSE'
+rm 'frontend/node_modules/postcss/README.md'
+rm 'frontend/node_modules/postcss/lib/at-rule.d.ts'
+rm 'frontend/node_modules/postcss/lib/at-rule.js'
+rm 'frontend/node_modules/postcss/lib/comment.d.ts'
+rm 'frontend/node_modules/postcss/lib/comment.js'
+rm 'frontend/node_modules/postcss/lib/container.d.ts'
+rm 'frontend/node_modules/postcss/lib/container.js'
+rm 'frontend/node_modules/postcss/lib/css-syntax-error.d.ts'
+rm 'frontend/node_modules/postcss/lib/css-syntax-error.js'
+rm 'frontend/node_modules/postcss/lib/declaration.d.ts'
+rm 'frontend/node_modules/postcss/lib/declaration.js'
+rm 'frontend/node_modules/postcss/lib/document.d.ts'
+rm 'frontend/node_modules/postcss/lib/document.js'
+rm 'frontend/node_modules/postcss/lib/fromJSON.d.ts'
+rm 'frontend/node_modules/postcss/lib/fromJSON.js'
+rm 'frontend/node_modules/postcss/lib/input.d.ts'
+rm 'frontend/node_modules/postcss/lib/input.js'
+rm 'frontend/node_modules/postcss/lib/lazy-result.d.ts'
+rm 'frontend/node_modules/postcss/lib/lazy-result.js'
+rm 'frontend/node_modules/postcss/lib/list.d.ts'
+rm 'frontend/node_modules/postcss/lib/list.js'
+rm 'frontend/node_modules/postcss/lib/map-generator.js'
+rm 'frontend/node_modules/postcss/lib/no-work-result.d.ts'
+rm 'frontend/node_modules/postcss/lib/no-work-result.js'
+rm 'frontend/node_modules/postcss/lib/node.d.ts'
+rm 'frontend/node_modules/postcss/lib/node.js'
+rm 'frontend/node_modules/postcss/lib/parse.d.ts'
+rm 'frontend/node_modules/postcss/lib/parse.js'
+rm 'frontend/node_modules/postcss/lib/parser.js'
+rm 'frontend/node_modules/postcss/lib/postcss.d.mts'
+rm 'frontend/node_modules/postcss/lib/postcss.d.ts'
+rm 'frontend/node_modules/postcss/lib/postcss.js'
+rm 'frontend/node_modules/postcss/lib/postcss.mjs'
+rm 'frontend/node_modules/postcss/lib/previous-map.d.ts'
+rm 'frontend/node_modules/postcss/lib/previous-map.js'
+rm 'frontend/node_modules/postcss/lib/processor.d.ts'
+rm 'frontend/node_modules/postcss/lib/processor.js'
+rm 'frontend/node_modules/postcss/lib/result.d.ts'
+rm 'frontend/node_modules/postcss/lib/result.js'
+rm 'frontend/node_modules/postcss/lib/root.d.ts'
+rm 'frontend/node_modules/postcss/lib/root.js'
+rm 'frontend/node_modules/postcss/lib/rule.d.ts'
+rm 'frontend/node_modules/postcss/lib/rule.js'
+rm 'frontend/node_modules/postcss/lib/stringifier.d.ts'
+rm 'frontend/node_modules/postcss/lib/stringifier.js'
+rm 'frontend/node_modules/postcss/lib/stringify.d.ts'
+rm 'frontend/node_modules/postcss/lib/stringify.js'
+rm 'frontend/node_modules/postcss/lib/symbols.js'
+rm 'frontend/node_modules/postcss/lib/terminal-highlight.js'
+rm 'frontend/node_modules/postcss/lib/tokenize.js'
+rm 'frontend/node_modules/postcss/lib/warn-once.js'
+rm 'frontend/node_modules/postcss/lib/warning.d.ts'
+rm 'frontend/node_modules/postcss/lib/warning.js'
+rm 'frontend/node_modules/postcss/package.json'
+rm 'frontend/node_modules/react-dom/LICENSE'
+rm 'frontend/node_modules/react-dom/README.md'
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js'
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server-legacy.browser.production.min.js'
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js' 
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server-legacy.node.production.min.js'
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server.browser.development.js'     
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js'  
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js'        
+rm 'frontend/node_modules/react-dom/cjs/react-dom-server.node.production.min.js'     
+rm 'frontend/node_modules/react-dom/cjs/react-dom-test-utils.development.js'
+rm 'frontend/node_modules/react-dom/cjs/react-dom-test-utils.production.min.js'      
+rm 'frontend/node_modules/react-dom/cjs/react-dom.development.js'
+rm 'frontend/node_modules/react-dom/cjs/react-dom.production.min.js'
+rm 'frontend/node_modules/react-dom/cjs/react-dom.profiling.min.js'
+rm 'frontend/node_modules/react-dom/client.js'
+rm 'frontend/node_modules/react-dom/index.js'
+rm 'frontend/node_modules/react-dom/package.json'
+rm 'frontend/node_modules/react-dom/profiling.js'
+rm 'frontend/node_modules/react-dom/server.browser.js'
+rm 'frontend/node_modules/react-dom/server.js'
+rm 'frontend/node_modules/react-dom/server.node.js'
+rm 'frontend/node_modules/react-dom/test-utils.js'
+rm 'frontend/node_modules/react-dom/umd/react-dom-server-legacy.browser.development.js'
+rm 'frontend/node_modules/react-dom/umd/react-dom-server-legacy.browser.production.min.js'
+rm 'frontend/node_modules/react-dom/umd/react-dom-server.browser.development.js'     
+rm 'frontend/node_modules/react-dom/umd/react-dom-server.browser.production.min.js'  
+rm 'frontend/node_modules/react-dom/umd/react-dom-test-utils.development.js'
+rm 'frontend/node_modules/react-dom/umd/react-dom-test-utils.production.min.js'      
+rm 'frontend/node_modules/react-dom/umd/react-dom.development.js'
+rm 'frontend/node_modules/react-dom/umd/react-dom.production.min.js'
+rm 'frontend/node_modules/react-dom/umd/react-dom.profiling.min.js'
+rm 'frontend/node_modules/react/LICENSE'
+rm 'frontend/node_modules/react/README.md'
+rm 'frontend/node_modules/react/cjs/react-jsx-dev-runtime.development.js'
+rm 'frontend/node_modules/react/cjs/react-jsx-dev-runtime.production.min.js'
+rm 'frontend/node_modules/react/cjs/react-jsx-dev-runtime.profiling.min.js'
+rm 'frontend/node_modules/react/cjs/react-jsx-runtime.development.js'
+rm 'frontend/node_modules/react/cjs/react-jsx-runtime.production.min.js'
+rm 'frontend/node_modules/react/cjs/react-jsx-runtime.profiling.min.js'
+rm 'frontend/node_modules/react/cjs/react.development.js'
+rm 'frontend/node_modules/react/cjs/react.production.min.js'
+rm 'frontend/node_modules/react/cjs/react.shared-subset.development.js'
+rm 'frontend/node_modules/react/cjs/react.shared-subset.production.min.js'
+rm 'frontend/node_modules/react/index.js'
+rm 'frontend/node_modules/react/jsx-dev-runtime.js'
+rm 'frontend/node_modules/react/jsx-runtime.js'
+rm 'frontend/node_modules/react/package.json'
+rm 'frontend/node_modules/react/react.shared-subset.js'
+rm 'frontend/node_modules/react/umd/react.development.js'
+rm 'frontend/node_modules/react/umd/react.production.min.js'
+rm 'frontend/node_modules/react/umd/react.profiling.min.js'
+rm 'frontend/node_modules/rollup/LICENSE.md'
+rm 'frontend/node_modules/rollup/README.md'
+rm 'frontend/node_modules/rollup/dist/bin/rollup'
+rm 'frontend/node_modules/rollup/dist/es/getLogFilter.js'
+rm 'frontend/node_modules/rollup/dist/es/package.json'
+rm 'frontend/node_modules/rollup/dist/es/parseAst.js'
+rm 'frontend/node_modules/rollup/dist/es/rollup.js'
+rm 'frontend/node_modules/rollup/dist/es/shared/node-entry.js'
+rm 'frontend/node_modules/rollup/dist/es/shared/parseAst.js'
+rm 'frontend/node_modules/rollup/dist/es/shared/watch.js'
+rm 'frontend/node_modules/rollup/dist/getLogFilter.d.ts'
+rm 'frontend/node_modules/rollup/dist/getLogFilter.js'
+rm 'frontend/node_modules/rollup/dist/loadConfigFile.d.ts'
+rm 'frontend/node_modules/rollup/dist/loadConfigFile.js'
+rm 'frontend/node_modules/rollup/dist/native.js'
+rm 'frontend/node_modules/rollup/dist/parseAst.d.ts'
+rm 'frontend/node_modules/rollup/dist/parseAst.js'
+rm 'frontend/node_modules/rollup/dist/rollup.d.ts'
+rm 'frontend/node_modules/rollup/dist/rollup.js'
+rm 'frontend/node_modules/rollup/dist/shared/fsevents-importer.js'
+rm 'frontend/node_modules/rollup/dist/shared/index.js'
+rm 'frontend/node_modules/rollup/dist/shared/loadConfigFile.js'
+rm 'frontend/node_modules/rollup/dist/shared/parseAst.js'
+rm 'frontend/node_modules/rollup/dist/shared/rollup.js'
+rm 'frontend/node_modules/rollup/dist/shared/watch-cli.js'
+rm 'frontend/node_modules/rollup/dist/shared/watch.js'
+rm 'frontend/node_modules/rollup/package.json'
+rm 'frontend/node_modules/scheduler/LICENSE'
+rm 'frontend/node_modules/scheduler/README.md'
+rm 'frontend/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js'      
+rm 'frontend/node_modules/scheduler/cjs/scheduler-unstable_mock.production.min.js'   
+rm 'frontend/node_modules/scheduler/cjs/scheduler-unstable_post_task.development.js' 
+rm 'frontend/node_modules/scheduler/cjs/scheduler-unstable_post_task.production.min.js'
+rm 'frontend/node_modules/scheduler/cjs/scheduler.development.js'
+rm 'frontend/node_modules/scheduler/cjs/scheduler.production.min.js'
+rm 'frontend/node_modules/scheduler/index.js'
+rm 'frontend/node_modules/scheduler/package.json'
+rm 'frontend/node_modules/scheduler/umd/scheduler-unstable_mock.development.js'      
+rm 'frontend/node_modules/scheduler/umd/scheduler-unstable_mock.production.min.js'   
+rm 'frontend/node_modules/scheduler/umd/scheduler.development.js'
+rm 'frontend/node_modules/scheduler/umd/scheduler.production.min.js'
+rm 'frontend/node_modules/scheduler/umd/scheduler.profiling.min.js'
+rm 'frontend/node_modules/scheduler/unstable_mock.js'
+rm 'frontend/node_modules/scheduler/unstable_post_task.js'
+rm 'frontend/node_modules/source-map-js/LICENSE'
+rm 'frontend/node_modules/source-map-js/README.md'
+rm 'frontend/node_modules/source-map-js/lib/array-set.js'
+rm 'frontend/node_modules/source-map-js/lib/base64-vlq.js'
+rm 'frontend/node_modules/source-map-js/lib/base64.js'
+rm 'frontend/node_modules/source-map-js/lib/binary-search.js'
+rm 'frontend/node_modules/source-map-js/lib/mapping-list.js'
+rm 'frontend/node_modules/source-map-js/lib/quick-sort.js'
+rm 'frontend/node_modules/source-map-js/lib/source-map-consumer.d.ts'
+rm 'frontend/node_modules/source-map-js/lib/source-map-consumer.js'
+rm 'frontend/node_modules/source-map-js/lib/source-map-generator.d.ts'
+rm 'frontend/node_modules/source-map-js/lib/source-map-generator.js'
+rm 'frontend/node_modules/source-map-js/lib/source-node.d.ts'
+rm 'frontend/node_modules/source-map-js/lib/source-node.js'
+rm 'frontend/node_modules/source-map-js/lib/util.js'
+rm 'frontend/node_modules/source-map-js/package.json'
+rm 'frontend/node_modules/source-map-js/source-map.d.ts'
+rm 'frontend/node_modules/source-map-js/source-map.js'
+rm 'frontend/node_modules/vite/LICENSE.md'
+rm 'frontend/node_modules/vite/README.md'
+rm 'frontend/node_modules/vite/bin/openChrome.applescript'
+rm 'frontend/node_modules/vite/bin/vite.js'
+rm 'frontend/node_modules/vite/client.d.ts'
+rm 'frontend/node_modules/vite/dist/client/client.mjs'
+rm 'frontend/node_modules/vite/dist/client/env.mjs'
+rm 'frontend/node_modules/vite/dist/node-cjs/publicUtils.cjs'
+rm 'frontend/node_modules/vite/dist/node/chunks/dep-BB45zftN.js'
+rm 'frontend/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js'
+rm 'frontend/node_modules/vite/dist/node/chunks/dep-D-7KCb9p.js'
+rm 'frontend/node_modules/vite/dist/node/chunks/dep-Dnp7gl8U.js'
+rm 'frontend/node_modules/vite/dist/node/chunks/dep-IQS-Za7F.js'
+rm 'frontend/node_modules/vite/dist/node/cli.js'
+rm 'frontend/node_modules/vite/dist/node/constants.js'
+rm 'frontend/node_modules/vite/dist/node/index.d.ts'
+rm 'frontend/node_modules/vite/dist/node/index.js'
+rm 'frontend/node_modules/vite/dist/node/runtime.d.ts'
+rm 'frontend/node_modules/vite/dist/node/runtime.js'
+rm 'frontend/node_modules/vite/dist/node/types.d-aGj9QkWt.d.ts'
+rm 'frontend/node_modules/vite/index.cjs'
+rm 'frontend/node_modules/vite/index.d.cts'
+rm 'frontend/node_modules/vite/package.json'
+rm 'frontend/node_modules/vite/types/customEvent.d.ts'
+rm 'frontend/node_modules/vite/types/hmrPayload.d.ts'
+rm 'frontend/node_modules/vite/types/hot.d.ts'
+rm 'frontend/node_modules/vite/types/import-meta.d.ts'
+rm 'frontend/node_modules/vite/types/importGlob.d.ts'
+rm 'frontend/node_modules/vite/types/importMeta.d.ts'
+rm 'frontend/node_modules/vite/types/metadata.d.ts'
+rm 'frontend/node_modules/vite/types/package.json'
 
 Alice Barbosa@Alice MINGW64 ~/.cursor (main)
 $
